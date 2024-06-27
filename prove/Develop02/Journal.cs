@@ -10,10 +10,13 @@ public class Journal
   public Entry entry = new Entry();
   public string file;
   
-
+  public Journal ()
+  {
+    _entries = new List<Entry>();
+  }
   public void AddEntry()
   {
-      List<Entry>_entries  = new List<Entry>();
+      
       Entry entry = new Entry();
       PromptGenerator prompt = new PromptGenerator();
       string frase  = prompt.GetRandomPrompt();
@@ -25,8 +28,7 @@ public class Journal
       entry._entryText= Console.ReadLine();
       entry._date = dateText;
       _entries.Add(entry) ;
-      Console.WriteLine(entry.ToString());
-      Console.WriteLine(_entries.ToString());
+      entry.Display();
 
 
       foreach (Entry ent in _entries)
@@ -40,8 +42,9 @@ public class Journal
   }
   public void DisplayAll()
   {
-    List<Entry> newEntry = ReadFromFile();
-    foreach(Entry en in newEntry)
+    //List<Entry> newEntry = new List<Entry>();
+    
+    foreach(Entry en in _entries)
     {
       Console.WriteLine(en._entryText);
     }
@@ -57,19 +60,17 @@ public class Journal
       }
     }
   }
-  public void LoadFromFile(string file)
+  public void LoadFromFile()
   {
-
-  }
-  public static List<Entry> ReadFromFile()
-  {
-    List<Entry> ent= new List<Entry>();
+     List<Entry> ent= new List<Entry>();
     string file ="journal.txt";
     string[] lines = System.IO.File.ReadAllLines(file);
     foreach (string  line in lines)
     {
       Console.WriteLine(line);
     }
-    return ent;
+    
   }
-}
+ 
+  
+  }

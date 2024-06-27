@@ -38,14 +38,14 @@ class Program
                 break;
 
                 // //Displays added entries
-                // case "2":
-                // journal.DisplayAll();
-                // break;
+                 case "2":
+                 journal.DisplayAll();
+                 break;
 
-                // //Loads entries from a file
-                // case "3":
-                // journal.LoadFromFile( );
-                // break;
+                 //Loads entries from a file
+                 case "3":
+                 journal.LoadFromFile( );
+                 break;
 
                 //Saves entries to a file
                  case "4":
