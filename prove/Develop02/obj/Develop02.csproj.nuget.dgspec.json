@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ncros\\OneDrive\\Documents\\cse210\\cse210-hw\\prove\\Develop02\\Develop02.csproj": {}
+    "F:\\cse210-hw\\prove\\Develop02\\Develop02.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ncros\\OneDrive\\Documents\\cse210\\cse210-hw\\prove\\Develop02\\Develop02.csproj": {
+    "F:\\cse210-hw\\prove\\Develop02\\Develop02.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ncros\\OneDrive\\Documents\\cse210\\cse210-hw\\prove\\Develop02\\Develop02.csproj",
+        "projectUniqueName": "F:\\cse210-hw\\prove\\Develop02\\Develop02.csproj",
         "projectName": "Develop02",
-        "projectPath": "C:\\Users\\ncros\\OneDrive\\Documents\\cse210\\cse210-hw\\prove\\Develop02\\Develop02.csproj",
+        "projectPath": "F:\\cse210-hw\\prove\\Develop02\\Develop02.csproj",
         "packagesPath": "C:\\Users\\ncros\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ncros\\OneDrive\\Documents\\cse210\\cse210-hw\\prove\\Develop02\\obj\\",
+        "outputPath": "F:\\cse210-hw\\prove\\Develop02\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\ncros\\AppData\\Roaming\\NuGet\\NuGet.Config"

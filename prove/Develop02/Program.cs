@@ -1,16 +1,11 @@
 using System;
 using System.IO;
-using System.Collections.Generic;
-using System.Security.Cryptography.X509Certificates;
 class Program
 {
     static void Main(string[] args)
 {
         //Creates a new instance of Journal
-        Entry _entries = new Entry();
         Journal journal = new Journal();
-        
-        
 
         //Welcome banner
         Console.WriteLine("Welcome to Your Daily Journal!");
@@ -32,25 +27,22 @@ class Program
                 //Adds new entry
                 case "1":
                 journal.AddEntry();
-                //entry.Display();
-                
-
                 break;
 
-                // //Displays added entries
-                 case "2":
-                 journal.DisplayAll();
-                 break;
+                //Displays added entries
+                case "2":
+                journal.DisplayEntries();
+                break;
 
-                 //Loads entries from a file
-                 case "3":
-                 journal.LoadFromFile( );
-                 break;
+                //Loads entries from a file
+                case "3":
+                journal.LoadFromFile();
+                break;
 
                 //Saves entries to a file
-                 case "4":
-                 journal.SaveToFile();
-                 break;
+                case "4":
+                journal.SaveToFile();
+                break;
 
                 //Exits program
                 case "5":

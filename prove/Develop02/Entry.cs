@@ -1,17 +1,18 @@
 using System;
 
-public class Entry{
-    public string _date;
-    public string _promptText;
-    public string _entryText;
+public class Entry {
+public string _date ;
+public string _entryText {get;}
 
-    public void Display()
+
+
+
+
+    //Displays the content of an entry
+    public void DisplayEntry()
     {
-      Console.WriteLine(_date);
-      Console.WriteLine(_promptText);
-      Console.WriteLine(_entryText);
-
+        Console.WriteLine($"Date: {_date }");
+        Console.WriteLine($"Content: {_entryText}\n");
     }
-
 
 }

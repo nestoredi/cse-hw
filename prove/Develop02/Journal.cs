@@ -1,76 +1,69 @@
 using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Security.Cryptography.X509Certificates;
 
+public class Journal {
+public List <Entry> entries;
+public PromptGenerator promptGenerator;
 
-public class Journal
-{
-  public List<Entry> _entries; 
-  public Entry entry = new Entry();
-  public string file;
-  
-  public Journal ()
-  {
-    _entries = new List<Entry>();
-  }
-  public void AddEntry()
-  {
-      
-      Entry entry = new Entry();
-      PromptGenerator prompt = new PromptGenerator();
-      string frase  = prompt.GetRandomPrompt();
-      Console.WriteLine(frase);
-      DateTime theCurrentTime = DateTime.Now;
-      string dateText = theCurrentTime.ToShortDateString();
-      Console.WriteLine(dateText);
-      Console.WriteLine("Enter the journal entry ; ");
-      entry._entryText= Console.ReadLine();
-      entry._date = dateText;
-      _entries.Add(entry) ;
-      entry.Display();
+    //Constructor initializes and empty list of entries
+    public Journal() {
+        entries = new List<Entry>();
+        Entry entry = new Entry();
+        //Initializes the prompt generator
+        promptGenerator = new PromptGenerator();
+    }
 
-
-      foreach (Entry ent in _entries)
-      {
-        Console.WriteLine(ent._date);
-        Console.WriteLine(ent._entryText);
-      }
-      
-      
-
-  }
-  public void DisplayAll()
-  {
-    //List<Entry> newEntry = new List<Entry>();
+    //Adds a new entry to the journal from user input
+    public void AddEntry() {
     
-    foreach(Entry en in _entries)
-    {
-      Console.WriteLine(en._entryText);
+        string prompt = promptGenerator.GenerateRandomPrompt();
+        DateTime theCurrentTime = DateTime.Now;
+        string _date = theCurrentTime.ToShortDateString();
+        Console.WriteLine(_date);
+        
+        Console.WriteLine($"Today's Prompt: {prompt}");
+        Console.Write("> ");
+        string _entryText = Console.ReadLine();
     }
-   }
-  public void SaveToFile()
-  {
-     file = "journal.txt";
-    using (StreamWriter outputFile = new StreamWriter (file))
-    {
-      foreach (Entry ent in _entries)
-      {
-        outputFile.WriteLine($"{ent._entryText} , {ent._date}");
-      }
+
+    //Displays data input this session
+    public void DisplayEntries() {
+        foreach (Entry entry in entries) {
+            entry.DisplayEntry();
+        }
     }
-  }
-  public void LoadFromFile()
-  {
-     List<Entry> ent= new List<Entry>();
-    string file ="journal.txt";
-    string[] lines = System.IO.File.ReadAllLines(file);
-    foreach (string  line in lines)
-    {
-      Console.WriteLine(line);
+
+    //Saves Entries to a file named by the user
+    public void SaveToFile() {
+        //Console.Write("Please enter the filename you would like to save to: ");
+        string filename = "journal.txt";
+        try {
+            using (StreamWriter writer = new StreamWriter(filename)) {
+                foreach (Entry entry in entries) {
+                    writer.WriteLine($"{entry._date}\n{entry._entryText}");
+                }
+            }
+            Console.WriteLine($"Journal entries saved to {filename}");
+        } catch (Exception e) {
+            Console.WriteLine($"Error saving entries to {filename}: {e.Message}");
+        }
     }
-    
-  }
- 
-  
-  }
+
+    //Loads Entries from a file named by the user
+    public void LoadFromFile() {
+        
+        String filename = "journal.txt";
+        try {
+            using (StreamReader reader = new StreamReader(filename)) {
+                while (!reader.EndOfStream) {
+                    string _date = reader.ReadLine();
+                    string _entryText = reader.ReadLine();
+                    Entry entry = new Entry();
+                    entries.Add(entry);
+                }
+            } 
+        } catch (Exception e) {
+                Console.WriteLine($"Error loading entries from :filename: {e.Message}");
+        }
+    }
+
+}
