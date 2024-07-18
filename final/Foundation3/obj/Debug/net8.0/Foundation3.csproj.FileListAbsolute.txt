@@ -1,0 +1,15 @@
+F:\cse210-hw\final\Foundation3\bin\Debug\net8.0\Foundation3.exe
+F:\cse210-hw\final\Foundation3\bin\Debug\net8.0\Foundation3.deps.json
+F:\cse210-hw\final\Foundation3\bin\Debug\net8.0\Foundation3.runtimeconfig.json
+F:\cse210-hw\final\Foundation3\bin\Debug\net8.0\Foundation3.dll
+F:\cse210-hw\final\Foundation3\bin\Debug\net8.0\Foundation3.pdb
+F:\cse210-hw\final\Foundation3\obj\Debug\net8.0\Foundation3.GeneratedMSBuildEditorConfig.editorconfig
+F:\cse210-hw\final\Foundation3\obj\Debug\net8.0\Foundation3.AssemblyInfoInputs.cache
+F:\cse210-hw\final\Foundation3\obj\Debug\net8.0\Foundation3.AssemblyInfo.cs
+F:\cse210-hw\final\Foundation3\obj\Debug\net8.0\Foundation3.csproj.CoreCompileInputs.cache
+F:\cse210-hw\final\Foundation3\obj\Debug\net8.0\Foundation3.sourcelink.json
+F:\cse210-hw\final\Foundation3\obj\Debug\net8.0\Foundation3.dll
+F:\cse210-hw\final\Foundation3\obj\Debug\net8.0\refint\Foundation3.dll
+F:\cse210-hw\final\Foundation3\obj\Debug\net8.0\Foundation3.pdb
+F:\cse210-hw\final\Foundation3\obj\Debug\net8.0\Foundation3.genruntimeconfig.cache
+F:\cse210-hw\final\Foundation3\obj\Debug\net8.0\ref\Foundation3.dll
