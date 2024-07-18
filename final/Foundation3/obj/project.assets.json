@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "F:\\cse210-hw\\final\\Foundation3\\Foundation3.csproj",
+      "projectUniqueName": "C:\\Users\\ncros\\OneDrive\\Documents\\cse210\\cse210-hw\\final\\Foundation3\\Foundation3.csproj",
       "projectName": "Foundation3",
-      "projectPath": "F:\\cse210-hw\\final\\Foundation3\\Foundation3.csproj",
+      "projectPath": "C:\\Users\\ncros\\OneDrive\\Documents\\cse210\\cse210-hw\\final\\Foundation3\\Foundation3.csproj",
       "packagesPath": "C:\\Users\\ncros\\.nuget\\packages\\",
-      "outputPath": "F:\\cse210-hw\\final\\Foundation3\\obj\\",
+      "outputPath": "C:\\Users\\ncros\\OneDrive\\Documents\\cse210\\cse210-hw\\final\\Foundation3\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\ncros\\AppData\\Roaming\\NuGet\\NuGet.Config"
