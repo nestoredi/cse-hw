@@ -1,0 +1,15 @@
+F:\cse210-hw\prove\Develop05\bin\Debug\net8.0\Develop05.exe
+F:\cse210-hw\prove\Develop05\bin\Debug\net8.0\Develop05.deps.json
+F:\cse210-hw\prove\Develop05\bin\Debug\net8.0\Develop05.runtimeconfig.json
+F:\cse210-hw\prove\Develop05\bin\Debug\net8.0\Develop05.dll
+F:\cse210-hw\prove\Develop05\bin\Debug\net8.0\Develop05.pdb
+F:\cse210-hw\prove\Develop05\obj\Debug\net8.0\Develop05.GeneratedMSBuildEditorConfig.editorconfig
+F:\cse210-hw\prove\Develop05\obj\Debug\net8.0\Develop05.AssemblyInfoInputs.cache
+F:\cse210-hw\prove\Develop05\obj\Debug\net8.0\Develop05.AssemblyInfo.cs
+F:\cse210-hw\prove\Develop05\obj\Debug\net8.0\Develop05.csproj.CoreCompileInputs.cache
+F:\cse210-hw\prove\Develop05\obj\Debug\net8.0\Develop05.sourcelink.json
+F:\cse210-hw\prove\Develop05\obj\Debug\net8.0\Develop05.dll
+F:\cse210-hw\prove\Develop05\obj\Debug\net8.0\refint\Develop05.dll
+F:\cse210-hw\prove\Develop05\obj\Debug\net8.0\Develop05.pdb
+F:\cse210-hw\prove\Develop05\obj\Debug\net8.0\Develop05.genruntimeconfig.cache
+F:\cse210-hw\prove\Develop05\obj\Debug\net8.0\ref\Develop05.dll
