@@ -1,20 +1,22 @@
-using System;
-using System.Collections.Generic;
+using System.Data.SqlTypes;
 
-   class Program
+public class GoalManager
 {
-    static void Main(string[] args)
-{
-     List<Goal> _goals = new List<Goal>():
-     //Welcome banner
-        Console.WriteLine("Welcome to Your Goal planner!");
+    List<Goal> _goals ;
     
-        while (true) {
+    public GoalManager()
+    {
+        new List<Goal>();
+        Goal goal;
+    }
+    public void CreateGoal()
+    {
+      while (true) {
             Console.WriteLine("Menu:");
-            Console.WriteLine("1. Create new Goal");
-            Console.WriteLine("2. List Goals");
-            Console.WriteLine("3. Save Goals");
-            Console.WriteLine("4. Load Goals");
+            Console.WriteLine("1. simple goal");
+            Console.WriteLine("2. eternal goal");
+            Console.WriteLine("3. checklist goal");
+            Console.WriteLine("4. quit");
             Console.WriteLine("5. Record Event");
             Console.WriteLine("6. Record Quit");
 
@@ -26,38 +28,35 @@ using System.Collections.Generic;
             switch (choice) {
                 //Adds new Goal
                 case "1":
-                goals.CreateGoal();
+                Console.WriteLine("enter your simple goal :");
+                string sg = Console.ReadLine();
+                Console.WriteLine("enter your descript :");
+                string descr = Console.ReadLine();
+                Console.WriteLine("enter your points :");
+                string p = Console.ReadLine();
+                Goal goal = new Goal(sg,descr,p);
+
+                
 
                 
                 break;
 
                 //List Goal
                 case "2":
-                goals.ListGoalNames();
-                goals.ListGoalDetails();
+                
                 
                 break;
 
                 //Save Goals to Goal.txt
                 case "3":
-                goals.SaveGoals();
+                
                 
                 break;
 
-                //Load Goals
-                case "4":
-                goals.LoadGoals();
                 
-                break;
-               
-                //Saves entries to a file
-                case "5":
-                goals.RecordEvent();
-                
-                break;
 
                 //Exits program
-                case "6":
+                case "4":
                 Console.WriteLine("Goodbye!");
                 return;
 
@@ -66,6 +65,6 @@ using System.Collections.Generic;
                 Console.WriteLine("Invalid selection, please enter a number 1-5.");
                 break;
             }
-        }
-}
+        }   
+    }
 }
